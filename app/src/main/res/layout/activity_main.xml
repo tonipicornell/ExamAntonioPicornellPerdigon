@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="Posta de Sol"
+        app:titleTextColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="end|center_vertical">
+
+            <ImageButton
+                android:id="@+id/moon_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/moon"
+                android:contentDescription="Luna"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/face_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/face"
+                android:contentDescription="Cara"
+                android:background="?android:attr/selectableItemBackground" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/sky"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/blue_sky" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/sol" />
+
+    <View
+        android:id="@+id/ocean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:background="@color/ocean" />
+</FrameLayout>

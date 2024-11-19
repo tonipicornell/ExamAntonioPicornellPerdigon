@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:max="255"
+        android:progress="128" />
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBarRed"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:progress="128"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBarGreen"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:progress="128"
+        android:max="255" />
+
+    <Button
+        android:id="@+id/buttonChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar color"
+        android:layout_above="@id/seekBarBlue"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray" />
+
+</RelativeLayout>
